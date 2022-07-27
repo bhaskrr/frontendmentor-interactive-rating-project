@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="bg">
+  <section class="container">
+    <!-- Rating state start -->
+    <section class="ratingState">
+      <header>
+        <img src="/images/icon-star.svg" alt="star icon" />
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+           to help us improve our offering!</p>
+      </header>
+      <main>
+        <form action="javascript:void(0)">
+          <section class="btn-sec">
+            <input type="radio" class="btn" name="rating" value="1" checked/><span>1</span>
+            <input type="radio" class="btn" name="rating" value="2" /><span>2</span>
+            <input type="radio" class="btn" name="rating" value="3" /><span>3</span>
+            <input type="radio" class="btn" name="rating" value="4" /><span>4</span>
+            <input type="radio" class="btn" name="rating" value="5" /><span>5</span>
+
+          </section>
+          
+          <input type="submit" class="submitBtn" value="SUBMIT">
+        </form>
+      </main>
+      
+     </section>
+  
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <section class="thankYouState">
+      <img src="/images/illustration-thank-you.svg" alt="Thank you illustration" />
+
+      <p>You selected <span id="rated"></span> out of 5</p>
+
+      <h2>Thank you!</h2>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+         don’t hesitate to get in touch!</p>
+    </section>
+
+    <!-- Thank you state end -->
+
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Bhaskar Bordoloi</a>.
+    </div>
+  </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
